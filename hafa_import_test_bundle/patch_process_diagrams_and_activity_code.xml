@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حاکمیت اطلاعات و فرآیندهای آموزشی (حافا)</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>Property:تصویر نمودار زمینه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::تصویر نمودار زمینه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تصویر فلوچارت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::تصویر فلوچارت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تصویر نمودار جریان داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::تصویر نمودار جریان داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:فرآیند</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی استاندارد شناسنامه فرآیند حافا. فعالیت با زیرفرآیند متفاوت است؛ فعالیت‌ها در صفحات «فعالیت:» ثبت می‌شوند.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div style="direction:rtl; text-align:right;"&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''شناسنامه فرآیند: {{{نام فرآیند|{{PAGENAME}}}}}'''
+|-
+! کد فرآیند || {{{کد فرآیند|}}}
+! سطح || {{{سطح فرآیند|}}}
+! وضعیت || {{{وضعیت حاکمیتی|پیش‌نویس}}}
+|-
+! واحد مسئول || [[{{{واحد مسئول|}}}]]
+! مالک فرآیند || [[{{{مالک فرآیند|}}}]]
+! نسخه || {{{نسخه|۰.۱}}}
+|-
+! واحدهای همکار || colspan="5" | {{{واحدهای همکار|}}}
+|-
+! تاریخ تأیید || {{{تاریخ تأیید|}}}
+! بازنگری بعدی || {{{تاریخ بازنگری بعدی|}}}
+! فرآیند بالادست || [[{{{فرآیند بالادست|}}}]]
+|-
+! هدف || colspan="5" | {{{هدف فرآیند|}}}
+|-
+! رویداد آغاز || colspan="2" | {{{رویداد آغاز|}}}
+! رویداد پایان || colspan="3" | {{{رویداد پایان|}}}
+|-
+! ذی‌نفعان || colspan="5" | {{{ذی‌نفعان|}}}
+|-
+! ورودی‌ها || colspan="2" | {{{ورودی‌ها|}}}
+! خروجی‌ها || colspan="3" | {{{خروجی‌ها|}}}
+|-
+! سامانه‌های مرتبط || colspan="5" | {{{سامانه‌های مرتبط|}}}
+|-
+! داده‌های کلیدی || colspan="5" | {{{داده‌های کلیدی|}}}
+|-
+! قوانین و مستندات || colspan="5" | {{{قوانین و مستندات|}}}
+|-
+! توضیحات/دامنه || colspan="5" | {{{توضیحات|}}}
+|}
+
+== مدل BPMN ==
+{{#if:{{{فایل BPMN|}}}|* '''فایل منبع BPMN:''' [[پرونده:{{{فایل BPMN}}}]]}}
+{{#if:{{{تصویر BPMN|}}}|
+&lt;div style="max-width:100%; overflow-x:auto; margin:0.75em 0;"&gt;
+[[پرونده:{{{تصویر BPMN}}}|frameless|900px|alt=نمودار BPMN فرآیند]]
+&lt;/div&gt;
+}}
+
+== نمودارهای تکمیلی فرآیند ==
+{{#if:{{{تصویر نمودار زمینه|}}}|
+=== نمودار زمینه (Context Diagram) ===
+&lt;div style="max-width:100%; overflow-x:auto; margin:0.75em 0;"&gt;
+[[پرونده:{{{تصویر نمودار زمینه}}}|frameless|900px|alt=نمودار زمینه فرآیند]]
+&lt;/div&gt;
+}}
+{{#if:{{{تصویر فلوچارت|}}}|
+=== فلوچارت (Flowchart) ===
+&lt;div style="max-width:100%; overflow-x:auto; margin:0.75em 0;"&gt;
+[[پرونده:{{{تصویر فلوچارت}}}|frameless|900px|alt=فلوچارت فرآیند]]
+&lt;/div&gt;
+}}
+{{#if:{{{تصویر نمودار جریان داده|}}}|
+=== نمودار جریان داده (Data Flow Diagram) ===
+&lt;div style="max-width:100%; overflow-x:auto; margin:0.75em 0;"&gt;
+[[پرونده:{{{تصویر نمودار جریان داده}}}|frameless|900px|alt=نمودار جریان داده فرآیند]]
+&lt;/div&gt;
+}}
+
+== فعالیت‌های ثبت‌شده ==
+{{#ask:[[رده:فعالیت‌ها]][[مرتبط با فرآیند::{{FULLPAGENAME}}]]
+|?ترتیب انجام
+|?نقش انجام‌دهنده
+|?سامانه فعالیت
+|format=table
+|mainlabel=فعالیت
+|sort=ترتیب انجام
+|order=asc
+|default=هنوز فعالیتی ثبت نشده است.
+}}
+
+{{#set:
+کد فرآیند={{{کد فرآیند|}}}
+|نام فرآیند={{{نام فرآیند|{{PAGENAME}}}}}
+|سطح فرآیند={{{سطح فرآیند|}}}
+|واحد مسئول={{{واحد مسئول|}}}
+|مالک فرآیند={{{مالک فرآیند|}}}
+|واحدهای همکار={{{واحدهای همکار|}}}|+sep=,
+|وضعیت حاکمیتی={{{وضعیت حاکمیتی|پیش‌نویس}}}
+|هدف فرآیند={{{هدف فرآیند|}}}
+|رویداد آغاز={{{رویداد آغاز|}}}
+|رویداد پایان={{{رویداد پایان|}}}
+|فرآیند بالادست={{{فرآیند بالادست|}}}
+|سامانه‌های مرتبط={{{سامانه‌های مرتبط|}}}|+sep=,
+|داده‌های کلیدی={{{داده‌های کلیدی|}}}|+sep=,
+|نسخه={{{نسخه|۰.۱}}}
+|تاریخ تأیید={{{تاریخ تأیید|}}}
+|تاریخ بازنگری بعدی={{{تاریخ بازنگری بعدی|}}}
+}}
+{{#if:{{{فایل BPMN|}}}|{{#set:فایل BPMN=پرونده:{{{فایل BPMN}}}}}}}
+{{#if:{{{تصویر BPMN|}}}|{{#set:تصویر BPMN=پرونده:{{{تصویر BPMN}}}}}}}
+{{#if:{{{تصویر نمودار زمینه|}}}|{{#set:تصویر نمودار زمینه=پرونده:{{{تصویر نمودار زمینه}}}}}}}
+{{#if:{{{تصویر فلوچارت|}}}|{{#set:تصویر فلوچارت=پرونده:{{{تصویر فلوچارت}}}}}}}
+{{#if:{{{تصویر نمودار جریان داده|}}}|{{#set:تصویر نمودار جریان داده=پرونده:{{{تصویر نمودار جریان داده}}}}}}}
+&lt;/div&gt;
+[[رده:فرآیندها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:فرآیند</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+فرم استاندارد ایجاد و ویرایش فرآیند حافا.
+{{#forminput:form=فرآیند|button text=ایجاد/ویرایش فرآیند}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=فرآیند:&lt;فرآیند[نام فرآیند]&gt;|create title=ایجاد فرآیند حافا|edit title=ویرایش فرآیند حافا}}}
+{{{for template|فرآیند}}}
+== شناسایی و حکمرانی ==
+{| class="formtable"
+! کد فرآیند: || {{{field|کد فرآیند|mandatory|size=25|placeholder=HAFA-EDU-PR-001}}}
+|-
+! نام فرآیند: || {{{field|نام فرآیند|mandatory|size=60}}}
+|-
+! سطح فرآیند: || {{{field|سطح فرآیند|input type=dropdown|mandatory|values=کلان,اصلی,زیرفرآیند}}}
+|-
+! واحد مسئول: || {{{field|واحد مسئول|input type=combobox|values from category=واحدهای سازمانی|mandatory}}}
+|-
+! مالک فرآیند: || {{{field|مالک فرآیند|input type=combobox|values from category=افراد}}}
+|-
+! واحدهای همکار: || {{{field|واحدهای همکار|input type=combobox|values from category=واحدهای سازمانی|list|delimiter=,|size=70}}}
+|-
+! وضعیت حاکمیتی: || {{{field|وضعیت حاکمیتی|input type=dropdown|mandatory|values=پیش‌نویس,در حال بازبینی,نیازمند اصلاح,تأیید مالک,مصوب,منسوخ|default=پیش‌نویس}}}
+|-
+! فرآیند بالادست: || {{{field|فرآیند بالادست|input type=combobox|values from category=فرآیندها}}}
+|-
+! نسخه: || {{{field|نسخه|size=10|default=۰.۱}}}
+|-
+! تاریخ تأیید: || {{{field|تاریخ تأیید|input type=datepicker}}}
+|-
+! تاریخ بازنگری بعدی: || {{{field|تاریخ بازنگری بعدی|input type=datepicker}}}
+|}
+
+== تعریف و مرز ==
+{| class="formtable"
+! هدف فرآیند: || {{{field|هدف فرآیند|input type=textarea|mandatory|rows=3|cols=70}}}
+|-
+! رویداد آغاز: || {{{field|رویداد آغاز|input type=text|size=70}}}
+|-
+! رویداد پایان: || {{{field|رویداد پایان|input type=text|size=70}}}
+|-
+! ذی‌نفعان: || {{{field|ذی‌نفعان|input type=textarea|rows=2|cols=70}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! قوانین و مستندات: || {{{field|قوانین و مستندات|input type=textarea|rows=3|cols=70}}}
+|-
+! توضیحات/دامنه: || {{{field|توضیحات|input type=textarea|rows=3|cols=70}}}
+|}
+
+== ارتباط با داده و سامانه ==
+{| class="formtable"
+! سامانه‌های مرتبط: || {{{field|سامانه‌های مرتبط|input type=combobox|values from category=سامانه‌ها|list|delimiter=,|size=70}}}
+|-
+! داده‌های کلیدی: || {{{field|داده‌های کلیدی|input type=combobox|values from category=عناصر داده|list|delimiter=,|size=70}}}
+|}
+
+== مدل BPMN ==
+{| class="formtable"
+! فایل منبع BPMN: || {{{field|فایل BPMN|input type=upload|uploadable|size=60}}}
+|-
+! تصویر BPMN: || {{{field|تصویر BPMN|input type=upload|uploadable|size=60}}}
+|}
+
+== نمودارهای تکمیلی فرآیند ==
+&lt;div class="hafa-form-help" style="margin:0.5em 0 1em; color:#54595d;"&gt;
+برای هر نمودار یک فایل تصویری مستقل با قالب PNG، JPG، JPEG یا SVG بارگذاری کنید. نمودار زمینه مرز و بازیگران بیرونی، فلوچارت توالی اجرایی و نمودار جریان داده مسیر جابه‌جایی داده‌ها را نشان می‌دهد.
+&lt;/div&gt;
+{| class="formtable"
+! نمودار زمینه (Context Diagram): || {{{field|تصویر نمودار زمینه|input type=upload|uploadable|size=60}}}
+|-
+! فلوچارت (Flowchart): || {{{field|تصویر فلوچارت|input type=upload|uploadable|size=60}}}
+|-
+! نمودار جریان داده (Data Flow Diagram): || {{{field|تصویر نمودار جریان داده|input type=upload|uploadable|size=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد فعالیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد فعالیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:فعالیت</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''فعالیت: {{{نام فعالیت|{{PAGENAME}}}}}'''
+|-
+! کد فعالیت || {{{کد فعالیت|}}}
+! فرآیند || [[{{{مرتبط با فرآیند|}}}]]
+! ترتیب || {{{ترتیب انجام|}}}
+|-
+! نقش انجام‌دهنده || colspan="5" | [[{{{نقش انجام‌دهنده|}}}]]
+|-
+! ورودی || {{{ورودی‌ها|}}}
+! خروجی || {{{خروجی‌ها|}}}
+! سامانه || [[{{{سامانه فعالیت|}}}]]
+|-
+! توضیحات || colspan="5" | {{{توضیحات فعالیت|}}}
+|}
+{{#set:کد فعالیت={{{کد فعالیت|}}}|نام فعالیت={{{نام فعالیت|{{PAGENAME}}}}}|مرتبط با فرآیند={{{مرتبط با فرآیند|}}}|ترتیب انجام={{{ترتیب انجام|}}}|نقش انجام‌دهنده={{{نقش انجام‌دهنده|}}}|سامانه فعالیت={{{سامانه فعالیت|}}}}}
+[[رده:فعالیت‌ها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:فعالیت</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-17T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <comment>افزودن سه تصویر فرآیند و حفظ کد یکتای فعالیت برای ورود گروهی</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش فعالیت‌های یک فرآیند استفاده می‌شود.
+{{#forminput:form=فعالیت|button text=ایجاد/ویرایش فعالیت|autocomplete on category=فعالیت‌ها|placeholder=نام فعالیت را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=فعالیت:&lt;فعالیت[نام فعالیت]&gt;}}}
+{{{for template|فعالیت}}}
+{| class="formtable"
+! کد فعالیت: || {{{field|کد فعالیت|mandatory|size=25|placeholder=HAFA-EDU-ACT-001}}}
+|-
+! نام فعالیت: || {{{field|نام فعالیت|mandatory|size=60}}}
+|-
+! مرتبط با فرآیند: || {{{field|مرتبط با فرآیند|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! ترتیب انجام: || {{{field|ترتیب انجام|input type=number|mandatory}}}
+|-
+! نقش انجام‌دهنده: || {{{field|نقش انجام‌دهنده|input type=combobox|values from category=نقش‌ها}}}
+|-
+! سامانه فعالیت: || {{{field|سامانه فعالیت|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! توضیحات فعالیت: || {{{field|توضیحات فعالیت|input type=textarea|rows=3|cols=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره فعالیت}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>
