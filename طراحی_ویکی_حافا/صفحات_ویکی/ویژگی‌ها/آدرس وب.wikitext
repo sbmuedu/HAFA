@@ -1,0 +1,2 @@
+[[Has type::URL]]
+[[Display title::آدرس وب]]

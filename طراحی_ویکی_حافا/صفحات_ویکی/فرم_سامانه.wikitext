@@ -1,0 +1,22 @@
+<noinclude>
+این فرم برای ایجاد یا ویرایش سامانه‌ها استفاده می‌شود.
+{{#forminput:form=سامانه|button text=ایجاد/ویرایش سامانه|autocomplete on category=سامانه‌ها|placeholder=نام سامانه را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=سامانه:<سامانه[نام سامانه]>}}}
+{{{for template|سامانه}}}
+{| class="formtable"
+! کد سامانه: || {{{field|کد سامانه|mandatory|size=25|placeholder=HAFA-EDU-SYS-001}}}
+|-
+! نام سامانه: || {{{field|نام سامانه|mandatory|size=60}}}
+|-
+! مالک سامانه: || {{{field|مالک سامانه|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت سامانه: || {{{field|وضعیت سامانه|input type=dropdown|values=فعال,در حال توسعه,در حال جایگزینی,غیرفعال|default=فعال}}}
+|-
+! آدرس وب: || {{{field|آدرس وب|input type=url|size=70}}}
+|-
+! توضیحات: || {{{field|توضیحات|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره سامانه}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

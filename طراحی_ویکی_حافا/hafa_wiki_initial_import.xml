@@ -1,0 +1,1610 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حاکمیت اطلاعات و فرآیندهای آموزشی (حافا)</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>الگو:فرآیند</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی استاندارد شناسنامه فرآیند حافا. فعالیت با زیرفرآیند متفاوت است؛ فعالیت‌ها در صفحات «فعالیت:» ثبت می‌شوند.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div style="direction:rtl; text-align:right;"&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''شناسنامه فرآیند: {{{نام فرآیند|{{PAGENAME}}}}}'''
+|-
+! کد فرآیند || {{{کد فرآیند|}}}
+! سطح || {{{سطح فرآیند|}}}
+! وضعیت || {{{وضعیت حاکمیتی|پیش‌نویس}}}
+|-
+! واحد مسئول || [[{{{واحد مسئول|}}}]]
+! مالک فرآیند || [[{{{مالک فرآیند|}}}]]
+! نسخه || {{{نسخه|۰.۱}}}
+|-
+! تاریخ تأیید || {{{تاریخ تأیید|}}}
+! بازنگری بعدی || {{{تاریخ بازنگری بعدی|}}}
+! فرآیند بالادست || [[{{{فرآیند بالادست|}}}]]
+|-
+! هدف || colspan="5" | {{{هدف فرآیند|}}}
+|-
+! رویداد آغاز || colspan="2" | {{{رویداد آغاز|}}}
+! رویداد پایان || colspan="3" | {{{رویداد پایان|}}}
+|-
+! ذی‌نفعان || colspan="5" | {{{ذی‌نفعان|}}}
+|-
+! ورودی‌ها || colspan="2" | {{{ورودی‌ها|}}}
+! خروجی‌ها || colspan="3" | {{{خروجی‌ها|}}}
+|-
+! سامانه‌های مرتبط || colspan="5" | {{{سامانه‌های مرتبط|}}}
+|-
+! داده‌های کلیدی || colspan="5" | {{{داده‌های کلیدی|}}}
+|-
+! قوانین و مستندات || colspan="5" | {{{قوانین و مستندات|}}}
+|-
+! توضیحات/دامنه || colspan="5" | {{{توضیحات|}}}
+|}
+
+== مدل فرآیند ==
+{{#if:{{{فایل BPMN|}}}|* فایل منبع BPMN: [[پرونده:{{{فایل BPMN}}}]]}}
+{{#if:{{{تصویر BPMN|}}}|* نمودار: [[پرونده:{{{تصویر BPMN}}}|800px]]}}
+
+== فعالیت‌های ثبت‌شده ==
+{{#ask:[[رده:فعالیت‌ها]][[مرتبط با فرآیند::{{FULLPAGENAME}}]]
+|?ترتیب انجام
+|?نقش انجام‌دهنده
+|?سامانه فعالیت
+|format=table
+|mainlabel=فعالیت
+|sort=ترتیب انجام
+|order=asc
+|default=هنوز فعالیتی ثبت نشده است.
+}}
+
+{{#set:
+کد فرآیند={{{کد فرآیند|}}}
+|نام فرآیند={{{نام فرآیند|{{PAGENAME}}}}}
+|سطح فرآیند={{{سطح فرآیند|}}}
+|واحد مسئول={{{واحد مسئول|}}}
+|مالک فرآیند={{{مالک فرآیند|}}}
+|وضعیت حاکمیتی={{{وضعیت حاکمیتی|پیش‌نویس}}}
+|هدف فرآیند={{{هدف فرآیند|}}}
+|رویداد آغاز={{{رویداد آغاز|}}}
+|رویداد پایان={{{رویداد پایان|}}}
+|فرآیند بالادست={{{فرآیند بالادست|}}}
+|سامانه‌های مرتبط={{{سامانه‌های مرتبط|}}}|+sep=,
+|داده‌های کلیدی={{{داده‌های کلیدی|}}}|+sep=,
+|نسخه={{{نسخه|۰.۱}}}
+|تاریخ تأیید={{{تاریخ تأیید|}}}
+|تاریخ بازنگری بعدی={{{تاریخ بازنگری بعدی|}}}
+}}
+&lt;/div&gt;
+[[رده:فرآیندها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:فرآیند</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+فرم استاندارد ایجاد و ویرایش فرآیند حافا.
+{{#forminput:form=فرآیند|button text=ایجاد/ویرایش فرآیند}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=فرآیند:&lt;فرآیند[نام فرآیند]&gt;|create title=ایجاد فرآیند حافا|edit title=ویرایش فرآیند حافا}}}
+{{{for template|فرآیند}}}
+== شناسایی و حکمرانی ==
+{| class="formtable"
+! کد فرآیند: || {{{field|کد فرآیند|mandatory|size=25|placeholder=HAFA-EDU-PR-001}}}
+|-
+! نام فرآیند: || {{{field|نام فرآیند|mandatory|size=60}}}
+|-
+! سطح فرآیند: || {{{field|سطح فرآیند|input type=dropdown|mandatory|values=کلان,اصلی,زیرفرآیند}}}
+|-
+! واحد مسئول: || {{{field|واحد مسئول|input type=combobox|values from category=واحدهای سازمانی|mandatory}}}
+|-
+! مالک فرآیند: || {{{field|مالک فرآیند|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت حاکمیتی: || {{{field|وضعیت حاکمیتی|input type=dropdown|mandatory|values=پیش‌نویس,در حال بازبینی,نیازمند اصلاح,تأیید مالک,مصوب,منسوخ|default=پیش‌نویس}}}
+|-
+! فرآیند بالادست: || {{{field|فرآیند بالادست|input type=combobox|values from category=فرآیندها}}}
+|-
+! نسخه: || {{{field|نسخه|size=10|default=۰.۱}}}
+|-
+! تاریخ تأیید: || {{{field|تاریخ تأیید|input type=datepicker}}}
+|-
+! تاریخ بازنگری بعدی: || {{{field|تاریخ بازنگری بعدی|input type=datepicker}}}
+|}
+
+== تعریف و مرز ==
+{| class="formtable"
+! هدف فرآیند: || {{{field|هدف فرآیند|input type=textarea|mandatory|rows=3|cols=70}}}
+|-
+! رویداد آغاز: || {{{field|رویداد آغاز|input type=text|size=70}}}
+|-
+! رویداد پایان: || {{{field|رویداد پایان|input type=text|size=70}}}
+|-
+! ذی‌نفعان: || {{{field|ذی‌نفعان|input type=textarea|rows=2|cols=70}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! قوانین و مستندات: || {{{field|قوانین و مستندات|input type=textarea|rows=3|cols=70}}}
+|-
+! توضیحات/دامنه: || {{{field|توضیحات|input type=textarea|rows=3|cols=70}}}
+|}
+
+== ارتباط با داده و سامانه ==
+{| class="formtable"
+! سامانه‌های مرتبط: || {{{field|سامانه‌های مرتبط|input type=combobox|values from category=سامانه‌ها|list|delimiter=,|size=70}}}
+|-
+! داده‌های کلیدی: || {{{field|داده‌های کلیدی|input type=combobox|values from category=عناصر داده|list|delimiter=,|size=70}}}
+|}
+
+== مدل BPMN ==
+{| class="formtable"
+! فایل BPMN: || {{{field|فایل BPMN|input type=upload|uploadable|size=60}}}
+|-
+! تصویر BPMN: || {{{field|تصویر BPMN|input type=upload|uploadable|size=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:فعالیت</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''فعالیت: {{{نام فعالیت|{{PAGENAME}}}}}'''
+|-
+! فرآیند || [[{{{مرتبط با فرآیند|}}}]]
+! ترتیب || {{{ترتیب انجام|}}}
+! نقش انجام‌دهنده || [[{{{نقش انجام‌دهنده|}}}]]
+|-
+! ورودی || {{{ورودی‌ها|}}}
+! خروجی || {{{خروجی‌ها|}}}
+! سامانه || [[{{{سامانه فعالیت|}}}]]
+|-
+! توضیحات || colspan="5" | {{{توضیحات فعالیت|}}}
+|}
+{{#set:نام فعالیت={{{نام فعالیت|{{PAGENAME}}}}}|مرتبط با فرآیند={{{مرتبط با فرآیند|}}}|ترتیب انجام={{{ترتیب انجام|}}}|نقش انجام‌دهنده={{{نقش انجام‌دهنده|}}}|سامانه فعالیت={{{سامانه فعالیت|}}}}}
+[[رده:فعالیت‌ها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:فعالیت</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{{info|page name=فعالیت:&lt;فعالیت[نام فعالیت]&gt;}}}
+{{{for template|فعالیت}}}
+{| class="formtable"
+! نام فعالیت: || {{{field|نام فعالیت|mandatory|size=60}}}
+|-
+! مرتبط با فرآیند: || {{{field|مرتبط با فرآیند|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! ترتیب انجام: || {{{field|ترتیب انجام|input type=number|mandatory}}}
+|-
+! نقش انجام‌دهنده: || {{{field|نقش انجام‌دهنده|input type=combobox|values from category=نقش‌ها}}}
+|-
+! سامانه فعالیت: || {{{field|سامانه فعالیت|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! توضیحات فعالیت: || {{{field|توضیحات فعالیت|input type=textarea|rows=3|cols=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره فعالیت}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:سامانه</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''سامانه: {{{نام سامانه|{{PAGENAME}}}}}'''
+|-
+! کد سامانه || {{{کد سامانه|}}}
+! مالک سامانه || [[{{{مالک سامانه|}}}]]
+! وضعیت || {{{وضعیت سامانه|فعال}}}
+|-
+! آدرس وب || [{{{آدرس وب|}}} {{{آدرس وب|}}}]
+|-
+! توضیحات || colspan="5" | {{{توضیحات|}}}
+|}
+{{#set:کد سامانه={{{کد سامانه|}}}|نام سامانه={{{نام سامانه|{{PAGENAME}}}}}|مالک سامانه={{{مالک سامانه|}}}|وضعیت سامانه={{{وضعیت سامانه|فعال}}}|آدرس وب={{{آدرس وب|}}}}}
+[[رده:سامانه‌ها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:سامانه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{{info|page name=سامانه:&lt;سامانه[نام سامانه]&gt;}}}
+{{{for template|سامانه}}}
+{| class="formtable"
+! کد سامانه: || {{{field|کد سامانه|mandatory|size=25|placeholder=HAFA-EDU-SYS-001}}}
+|-
+! نام سامانه: || {{{field|نام سامانه|mandatory|size=60}}}
+|-
+! مالک سامانه: || {{{field|مالک سامانه|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت سامانه: || {{{field|وضعیت سامانه|input type=dropdown|values=فعال,در حال توسعه,در حال جایگزینی,غیرفعال|default=فعال}}}
+|-
+! آدرس وب: || {{{field|آدرس وب|input type=url|size=70}}}
+|-
+! توضیحات: || {{{field|توضیحات|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره سامانه}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:واژه</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''واژه: {{{نام واژه|{{PAGENAME}}}}}'''
+|-
+! کد واژه || {{{کد واژه|}}}
+! وضعیت || {{{وضعیت واژه|پیش‌نویس}}}
+|-
+! تعریف مصوب || colspan="3" | {{{تعریف|}}}
+|-
+! واحد مسئول || [[{{{واحد مرتبط|}}}]]
+! منبع تعریف || {{{منبع تعریف|}}}
+|-
+! مترادف‌ها || colspan="3" | {{{مترادف‌ها|}}}
+|}
+{{#set:کد واژه={{{کد واژه|}}}|نام واژه={{{نام واژه|{{PAGENAME}}}}}|تعریف واژه={{{تعریف|}}}|واحد مرتبط={{{واحد مرتبط|}}}|وضعیت واژه={{{وضعیت واژه|پیش‌نویس}}}}}
+[[رده:واژگان]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:واژه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{{info|page name=واژه:&lt;واژه[نام واژه]&gt;}}}
+{{{for template|واژه}}}
+{| class="formtable"
+! کد واژه: || {{{field|کد واژه|mandatory|size=25|placeholder=HAFA-TERM-001}}}
+|-
+! نام واژه: || {{{field|نام واژه|mandatory|size=60}}}
+|-
+! تعریف: || {{{field|تعریف|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! واحد مرتبط: || {{{field|واحد مرتبط|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مترادف‌ها: || {{{field|مترادف‌ها|input type=text|size=70}}}
+|-
+! منبع تعریف: || {{{field|منبع تعریف|input type=text|size=70}}}
+|-
+! وضعیت واژه: || {{{field|وضعیت واژه|input type=dropdown|values=پیش‌نویس,در حال بازبینی,مصوب,منسوخ|default=پیش‌نویس}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واژه}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:عنصر داده</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''عنصر داده: {{{نام عنصر داده|{{PAGENAME}}}}}'''
+|-
+! کد || {{{کد عنصر داده|}}}
+! نوع داده || {{{نوع داده|}}}
+! مالک داده || [[{{{مالک داده|}}}]]
+|-
+! تعریف || colspan="5" | {{{تعریف عنصر داده|}}}
+|-
+! قالب/طول || {{{قالب داده|}}}
+! دامنه مجاز || {{{دامنه مقادیر|}}}
+! حساسیت || {{{سطح حساسیت|داخلی}}}
+|-
+! منبع مرجع || [[{{{سامانه مرجع|}}}]]
+! واحد مسئول || [[{{{واحد مسئول داده|}}}]]
+|}
+{{#set:کد عنصر داده={{{کد عنصر داده|}}}|نام عنصر داده={{{نام عنصر داده|{{PAGENAME}}}}}|تعریف عنصر داده={{{تعریف عنصر داده|}}}|نوع داده={{{نوع داده|}}}|مالک داده={{{مالک داده|}}}|سامانه مرجع={{{سامانه مرجع|}}}|سطح حساسیت={{{سطح حساسیت|داخلی}}}}}
+[[رده:عناصر داده]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:عنصر داده</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{{info|page name=داده:&lt;عنصر داده[نام عنصر داده]&gt;}}}
+{{{for template|عنصر داده}}}
+{| class="formtable"
+! کد عنصر داده: || {{{field|کد عنصر داده|mandatory|size=25|placeholder=HAFA-DATA-001}}}
+|-
+! نام عنصر داده: || {{{field|نام عنصر داده|mandatory|size=60}}}
+|-
+! تعریف عنصر داده: || {{{field|تعریف عنصر داده|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! نوع داده: || {{{field|نوع داده|input type=dropdown|values=متن,عدد,تاریخ,زمان,بولی,فهرست انتخابی,شناسه,پرونده,پیوند}}}
+|-
+! قالب داده: || {{{field|قالب داده|input type=text|size=60|placeholder=مثال: YYYY-MM-DD یا عدد صحیح ۱۰ رقمی}}}
+|-
+! دامنه مقادیر: || {{{field|دامنه مقادیر|input type=textarea|rows=2|cols=70}}}
+|-
+! مالک داده: || {{{field|مالک داده|input type=combobox|values from category=افراد}}}
+|-
+! واحد مسئول داده: || {{{field|واحد مسئول داده|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! سامانه مرجع: || {{{field|سامانه مرجع|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! سطح حساسیت: || {{{field|سطح حساسیت|input type=dropdown|values=عمومی,داخلی,محرمانه|default=داخلی}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره عنصر داده}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:آدرس وب</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::URL]]
+[[Display title::آدرس وب]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تاریخ بازنگری بعدی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Date]]
+[[Display title::تاریخ بازنگری بعدی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تاریخ تأیید</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Date]]
+[[Display title::تاریخ تأیید]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تصویر BPMN</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::تصویر BPMN]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تعریف عنصر داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::تعریف عنصر داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:تعریف واژه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::تعریف واژه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:توضیحات فعالیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::توضیحات فعالیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:داده‌های کلیدی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::داده‌های کلیدی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:دامنه مقادیر</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::دامنه مقادیر]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:رویداد آغاز</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::رویداد آغاز]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:رویداد پایان</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::رویداد پایان]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سامانه فعالیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::سامانه فعالیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سامانه مرجع</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::سامانه مرجع]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سطح حساسیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::سطح حساسیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سطح فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::سطح فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:فایل BPMN</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::فایل BPMN]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:قالب داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::قالب داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مالک داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مالک داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مالک سامانه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مالک سامانه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مالک فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مالک فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مترادف‌ها</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::مترادف‌ها]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:منبع تعریف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::منبع تعریف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام عنصر داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام عنصر داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام فعالیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام فعالیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نسخه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نسخه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نوع داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نوع داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:هدف فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::هدف فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحد مسئول داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحد مسئول داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت حاکمیتی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت حاکمیتی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت سامانه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت سامانه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت واژه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت واژه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد سامانه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد سامانه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد عنصر داده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد عنصر داده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد واژه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد واژه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحد مسئول</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحد مسئول]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:فرآیند بالادست</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::فرآیند بالادست]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سامانه‌های مرتبط</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::سامانه‌های مرتبط]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:داده‌های کلیدی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::داده‌های کلیدی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مرتبط با فرآیند</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مرتبط با فرآیند]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:ترتیب انجام</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Number]]
+[[Display title::ترتیب انجام]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نقش انجام‌دهنده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::نقش انجام‌دهنده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:ورودی‌ها</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::ورودی‌ها]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:خروجی‌ها</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::خروجی‌ها]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام سامانه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام سامانه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام واژه</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام واژه]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحد مرتبط</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحد مرتبط]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:توضیحات</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::توضیحات]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:حافا</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: حافا.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:فرآیندها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: فرآیندها.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:فعالیت‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: فعالیت‌ها.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:سامانه‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: سامانه‌ها.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:واژگان</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: واژگان.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:عناصر داده</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: عناصر داده.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:واحدهای سازمانی</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: واحدهای سازمانی.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:افراد</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: افراد.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:نقش‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: نقش‌ها.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:نیازهای کسب‌وکار</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به سامانه حافا: نیازهای کسب‌وکار.
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>حافا:شروع</title>
+    <ns>3092</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-15T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">__NOTOC__
+&lt;div style="direction:rtl; text-align:right;"&gt;
+= سامانه حاکمیت اطلاعات و فرآیندهای آموزشی (حافا) =
+
+به سامانه حافا خوش آمدید.
+
+== شروع سریع ==
+* [[حافا:پروژه|منشور و تعریف پروژه]]
+* [[حافا:برنامه اجرایی فاز نخست ۱۴۰۵|برنامه اجرایی]]
+* [[حافا:معماری ابزار و سطوح دسترسی|راهنمای ابزار و دسترسی]]
+* [[فرم:فرآیند|ایجاد فرآیند]]
+* [[فرم:سامانه|ایجاد سامانه]]
+* [[فرم:واژه|ایجاد واژه]]
+* [[فرم:عنصر داده|ایجاد عنصر داده]]
+
+</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>

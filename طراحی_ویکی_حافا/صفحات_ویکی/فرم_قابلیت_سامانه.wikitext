@@ -1,0 +1,21 @@
+<noinclude>
+{{#forminput:form=قابلیت سامانه|button text=ایجاد/ویرایش قابلیت سامانه|autocomplete on category=قابلیت‌های سامانه|placeholder=نام قابلیت را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=قابلیت:<قابلیت سامانه[نام قابلیت]>}}}
+{{{for template|قابلیت سامانه}}}
+{| class="formtable"
+! کد قابلیت: || {{{field|کد قابلیت|mandatory|size=28|placeholder=HAFA-EDU-CAP-001}}}
+|-
+! نام قابلیت: || {{{field|نام قابلیت|mandatory|size=70}}}
+|-
+! سامانه مرتبط: || {{{field|سامانه مرتبط|input type=combobox|values from category=سامانه‌ها|mandatory}}}
+|-
+! وضعیت قابلیت: || {{{field|وضعیت قابلیت|input type=dropdown|values=فعال,ناقص,در حال توسعه,غیرفعال|default=فعال}}}
+|-
+! شرح قابلیت: || {{{field|شرح قابلیت|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! فرآیندهای پشتیبانی‌شده: || {{{field|فرآیندهای پشتیبانی‌شده|input type=combobox|values from category=فرآیندها|list|delimiter=,|size=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره قابلیت}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

@@ -1,0 +1,24 @@
+<noinclude>
+این فرم برای ایجاد یا ویرایش واحدهای سازمانی استفاده می‌شود.
+{{#forminput:form=واحد سازمانی|button text=ایجاد/ویرایش واحد سازمانی|autocomplete on category=واحدهای سازمانی|placeholder=نام واحد را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=<واحد سازمانی[نام واحد]>|create title=ایجاد واحد سازمانی|edit title=ویرایش واحد سازمانی}}}
+{{{for template|واحد سازمانی}}}
+{| class="formtable"
+! کد واحد: || {{{field|کد واحد|mandatory|size=25|placeholder=HAFA-EDU-ORG-001}}}
+|-
+! نام واحد: || {{{field|نام واحد|mandatory|size=60}}}
+|-
+! نوع واحد: || {{{field|نوع واحد|input type=dropdown|mandatory|values=دانشگاه,معاونت,مدیریت,مرکز,دفتر,اداره,گروه,کمیته}}}
+|-
+! واحد بالادست: || {{{field|واحد بالادست|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مدیر واحد: || {{{field|مدیر واحد|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت واحد: || {{{field|وضعیت واحد|input type=dropdown|values=فعال,ادغام‌شده,منحل‌شده|default=فعال}}}
+|-
+! شرح مأموریت: || {{{field|شرح مأموریت|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واحد}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

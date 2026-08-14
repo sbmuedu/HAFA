@@ -1,0 +1,30 @@
+<noinclude>
+این فرم برای ایجاد یا ویرایش عناصر دیکشنری داده استفاده می‌شود.
+{{#forminput:form=عنصر داده|button text=ایجاد/ویرایش عنصر داده|autocomplete on category=عناصر داده|placeholder=نام عنصر داده را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=داده:<عنصر داده[نام عنصر داده]>}}}
+{{{for template|عنصر داده}}}
+{| class="formtable"
+! کد عنصر داده: || {{{field|کد عنصر داده|mandatory|size=25|placeholder=HAFA-DATA-001}}}
+|-
+! نام عنصر داده: || {{{field|نام عنصر داده|mandatory|size=60}}}
+|-
+! تعریف عنصر داده: || {{{field|تعریف عنصر داده|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! نوع داده: || {{{field|نوع داده|input type=dropdown|values=متن,عدد,تاریخ,زمان,بولی,فهرست انتخابی,شناسه,پرونده,پیوند}}}
+|-
+! قالب داده: || {{{field|قالب داده|input type=text|size=60|placeholder=مثال: YYYY-MM-DD یا عدد صحیح ۱۰ رقمی}}}
+|-
+! دامنه مقادیر: || {{{field|دامنه مقادیر|input type=textarea|rows=2|cols=70}}}
+|-
+! مالک داده: || {{{field|مالک داده|input type=combobox|values from category=افراد}}}
+|-
+! واحد مسئول داده: || {{{field|واحد مسئول داده|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! سامانه مرجع: || {{{field|سامانه مرجع|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! سطح حساسیت: || {{{field|سطح حساسیت|input type=dropdown|values=عمومی,داخلی,محرمانه|default=داخلی}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره عنصر داده}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

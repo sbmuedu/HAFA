@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حاکمیت اطلاعات و فرآیندهای آموزشی (حافا)</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>الگو:واحد سازمانی</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی واحد سازمانی حافا؛ برای ثبت معاونت، مدیریت، مرکز، دفتر و اداره استفاده می‌شود.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div style="direction:rtl; text-align:right;"&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''واحد سازمانی: {{{نام واحد|{{PAGENAME}}}}}'''
+|-
+! کد واحد || {{{کد واحد|}}}
+! نوع واحد || {{{نوع واحد|}}}
+! واحد بالادست || [[{{{واحد بالادست|}}}]]
+|-
+! مدیر واحد || [[{{{مدیر واحد|}}}]]
+! وضعیت || {{{وضعیت واحد|فعال}}}
+|-
+! شرح مأموریت || colspan="5" | {{{شرح مأموریت|}}}
+|}
+
+== فرآیندهای تحت مسئولیت ==
+{{#ask:[[رده:فرآیندها]][[واحد مسئول::{{FULLPAGENAME}}]]
+|?کد فرآیند
+|?سطح فرآیند
+|?مالک فرآیند
+|?وضعیت حاکمیتی
+|format=table
+|mainlabel=فرآیند
+|sort=کد فرآیند
+|default=هنوز فرآیندی برای این واحد ثبت نشده است.
+}}
+
+== فرآیندهای همکار ==
+{{#ask:[[رده:فرآیندها]][[واحدهای همکار::{{FULLPAGENAME}}]]
+|?کد فرآیند
+|?واحد مسئول
+|?وضعیت حاکمیتی
+|format=table
+|mainlabel=فرآیند
+|sort=کد فرآیند
+|default=این واحد در فرآیند مشترکی ثبت نشده است.
+}}
+
+{{#set:کد واحد={{{کد واحد|}}}|نام واحد={{{نام واحد|{{PAGENAME}}}}}|نوع واحد={{{نوع واحد|}}}|واحد بالادست={{{واحد بالادست|}}}|مدیر واحد={{{مدیر واحد|}}}|وضعیت واحد={{{وضعیت واحد|فعال}}}|شرح مأموریت={{{شرح مأموریت|}}}}}
+&lt;/div&gt;
+[[رده:واحدهای سازمانی]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:واحد سازمانی</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش واحدهای سازمانی استفاده می‌شود.
+{{#forminput:form=واحد سازمانی|button text=ایجاد/ویرایش واحد سازمانی|autocomplete on category=واحدهای سازمانی|placeholder=نام واحد را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=&lt;واحد سازمانی[نام واحد]&gt;|create title=ایجاد واحد سازمانی|edit title=ویرایش واحد سازمانی}}}
+{{{for template|واحد سازمانی}}}
+{| class="formtable"
+! کد واحد: || {{{field|کد واحد|mandatory|size=25|placeholder=HAFA-EDU-ORG-001}}}
+|-
+! نام واحد: || {{{field|نام واحد|mandatory|size=60}}}
+|-
+! نوع واحد: || {{{field|نوع واحد|input type=dropdown|mandatory|values=دانشگاه,معاونت,مدیریت,مرکز,دفتر,اداره,گروه,کمیته}}}
+|-
+! واحد بالادست: || {{{field|واحد بالادست|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مدیر واحد: || {{{field|مدیر واحد|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت واحد: || {{{field|وضعیت واحد|input type=dropdown|values=فعال,ادغام‌شده,منحل‌شده|default=فعال}}}
+|-
+! شرح مأموریت: || {{{field|شرح مأموریت|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واحد}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:فرآیند</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی استاندارد شناسنامه فرآیند حافا. فعالیت با زیرفرآیند متفاوت است؛ فعالیت‌ها در صفحات «فعالیت:» ثبت می‌شوند.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div style="direction:rtl; text-align:right;"&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''شناسنامه فرآیند: {{{نام فرآیند|{{PAGENAME}}}}}'''
+|-
+! کد فرآیند || {{{کد فرآیند|}}}
+! سطح || {{{سطح فرآیند|}}}
+! وضعیت || {{{وضعیت حاکمیتی|پیش‌نویس}}}
+|-
+! واحد مسئول || [[{{{واحد مسئول|}}}]]
+! مالک فرآیند || [[{{{مالک فرآیند|}}}]]
+! نسخه || {{{نسخه|۰.۱}}}
+|-
+! واحدهای همکار || colspan="5" | {{{واحدهای همکار|}}}
+|-
+! تاریخ تأیید || {{{تاریخ تأیید|}}}
+! بازنگری بعدی || {{{تاریخ بازنگری بعدی|}}}
+! فرآیند بالادست || [[{{{فرآیند بالادست|}}}]]
+|-
+! هدف || colspan="5" | {{{هدف فرآیند|}}}
+|-
+! رویداد آغاز || colspan="2" | {{{رویداد آغاز|}}}
+! رویداد پایان || colspan="3" | {{{رویداد پایان|}}}
+|-
+! ذی‌نفعان || colspan="5" | {{{ذی‌نفعان|}}}
+|-
+! ورودی‌ها || colspan="2" | {{{ورودی‌ها|}}}
+! خروجی‌ها || colspan="3" | {{{خروجی‌ها|}}}
+|-
+! سامانه‌های مرتبط || colspan="5" | {{{سامانه‌های مرتبط|}}}
+|-
+! داده‌های کلیدی || colspan="5" | {{{داده‌های کلیدی|}}}
+|-
+! قوانین و مستندات || colspan="5" | {{{قوانین و مستندات|}}}
+|-
+! توضیحات/دامنه || colspan="5" | {{{توضیحات|}}}
+|}
+
+== مدل فرآیند ==
+{{#if:{{{فایل BPMN|}}}|* فایل منبع BPMN: [[پرونده:{{{فایل BPMN}}}]]}}
+{{#if:{{{تصویر BPMN|}}}|* نمودار: [[پرونده:{{{تصویر BPMN}}}|800px]]}}
+
+== فعالیت‌های ثبت‌شده ==
+{{#ask:[[رده:فعالیت‌ها]][[مرتبط با فرآیند::{{FULLPAGENAME}}]]
+|?ترتیب انجام
+|?نقش انجام‌دهنده
+|?سامانه فعالیت
+|format=table
+|mainlabel=فعالیت
+|sort=ترتیب انجام
+|order=asc
+|default=هنوز فعالیتی ثبت نشده است.
+}}
+
+{{#set:
+کد فرآیند={{{کد فرآیند|}}}
+|نام فرآیند={{{نام فرآیند|{{PAGENAME}}}}}
+|سطح فرآیند={{{سطح فرآیند|}}}
+|واحد مسئول={{{واحد مسئول|}}}
+|مالک فرآیند={{{مالک فرآیند|}}}
+|وضعیت حاکمیتی={{{وضعیت حاکمیتی|پیش‌نویس}}}
+|هدف فرآیند={{{هدف فرآیند|}}}
+|رویداد آغاز={{{رویداد آغاز|}}}
+|رویداد پایان={{{رویداد پایان|}}}
+|فرآیند بالادست={{{فرآیند بالادست|}}}
+|سامانه‌های مرتبط={{{سامانه‌های مرتبط|}}}|+sep=,
+|داده‌های کلیدی={{{داده‌های کلیدی|}}}|+sep=,
+|نسخه={{{نسخه|۰.۱}}}
+|تاریخ تأیید={{{تاریخ تأیید|}}}
+|تاریخ بازنگری بعدی={{{تاریخ بازنگری بعدی|}}}
+}}
+&lt;/div&gt;
+[[رده:فرآیندها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:فرآیند</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+فرم استاندارد ایجاد و ویرایش فرآیند حافا.
+{{#forminput:form=فرآیند|button text=ایجاد/ویرایش فرآیند}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=فرآیند:&lt;فرآیند[نام فرآیند]&gt;|create title=ایجاد فرآیند حافا|edit title=ویرایش فرآیند حافا}}}
+{{{for template|فرآیند}}}
+== شناسایی و حکمرانی ==
+{| class="formtable"
+! کد فرآیند: || {{{field|کد فرآیند|mandatory|size=25|placeholder=HAFA-EDU-PR-001}}}
+|-
+! نام فرآیند: || {{{field|نام فرآیند|mandatory|size=60}}}
+|-
+! سطح فرآیند: || {{{field|سطح فرآیند|input type=dropdown|mandatory|values=کلان,اصلی,زیرفرآیند}}}
+|-
+! واحد مسئول: || {{{field|واحد مسئول|input type=combobox|values from category=واحدهای سازمانی|mandatory}}}
+|-
+! مالک فرآیند: || {{{field|مالک فرآیند|input type=combobox|values from category=افراد}}}
+|-
+! واحدهای همکار: || {{{field|واحدهای همکار|input type=combobox|values from category=واحدهای سازمانی|list|delimiter=,|size=70}}}
+|-
+! وضعیت حاکمیتی: || {{{field|وضعیت حاکمیتی|input type=dropdown|mandatory|values=پیش‌نویس,در حال بازبینی,نیازمند اصلاح,تأیید مالک,مصوب,منسوخ|default=پیش‌نویس}}}
+|-
+! فرآیند بالادست: || {{{field|فرآیند بالادست|input type=combobox|values from category=فرآیندها}}}
+|-
+! نسخه: || {{{field|نسخه|size=10|default=۰.۱}}}
+|-
+! تاریخ تأیید: || {{{field|تاریخ تأیید|input type=datepicker}}}
+|-
+! تاریخ بازنگری بعدی: || {{{field|تاریخ بازنگری بعدی|input type=datepicker}}}
+|}
+
+== تعریف و مرز ==
+{| class="formtable"
+! هدف فرآیند: || {{{field|هدف فرآیند|input type=textarea|mandatory|rows=3|cols=70}}}
+|-
+! رویداد آغاز: || {{{field|رویداد آغاز|input type=text|size=70}}}
+|-
+! رویداد پایان: || {{{field|رویداد پایان|input type=text|size=70}}}
+|-
+! ذی‌نفعان: || {{{field|ذی‌نفعان|input type=textarea|rows=2|cols=70}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! قوانین و مستندات: || {{{field|قوانین و مستندات|input type=textarea|rows=3|cols=70}}}
+|-
+! توضیحات/دامنه: || {{{field|توضیحات|input type=textarea|rows=3|cols=70}}}
+|}
+
+== ارتباط با داده و سامانه ==
+{| class="formtable"
+! سامانه‌های مرتبط: || {{{field|سامانه‌های مرتبط|input type=combobox|values from category=سامانه‌ها|list|delimiter=,|size=70}}}
+|-
+! داده‌های کلیدی: || {{{field|داده‌های کلیدی|input type=combobox|values from category=عناصر داده|list|delimiter=,|size=70}}}
+|}
+
+== مدل BPMN ==
+{| class="formtable"
+! فایل BPMN: || {{{field|فایل BPMN|input type=upload|uploadable|size=60}}}
+|-
+! تصویر BPMN: || {{{field|تصویر BPMN|input type=upload|uploadable|size=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد واحد]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام واحد]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نوع واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نوع واحد]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحد بالادست</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحد بالادست]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مدیر واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مدیر واحد]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت واحد]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:شرح مأموریت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::شرح مأموریت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحدهای همکار</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T01:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحدهای همکار]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>

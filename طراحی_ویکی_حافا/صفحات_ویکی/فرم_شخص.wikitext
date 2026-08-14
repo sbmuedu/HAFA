@@ -1,0 +1,21 @@
+<noinclude>
+{{#forminput:form=شخص|button text=ایجاد/ویرایش شخص|autocomplete on category=افراد|placeholder=نام کامل را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=<شخص[نام کامل]>}}}
+{{{for template|شخص}}}
+{| class="formtable"
+! کد شخص: || {{{field|کد شخص|size=28|placeholder=HAFA-EDU-PER-001}}}
+|-
+! نام کامل: || {{{field|نام کامل|mandatory|size=70}}}
+|-
+! سمت سازمانی: || {{{field|سمت سازمانی|input type=text|size=70}}}
+|-
+! واحد سازمانی: || {{{field|واحد سازمانی شخص|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! ایمیل سازمانی: || {{{field|ایمیل سازمانی|input type=email|size=70}}}
+|-
+! وضعیت همکاری: || {{{field|وضعیت همکاری|input type=dropdown|values=فعال,غیرفعال,خارج از حوزه|default=فعال}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره شخص}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

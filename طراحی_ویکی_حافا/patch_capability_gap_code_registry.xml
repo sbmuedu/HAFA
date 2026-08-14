@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حافا</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>الگو:قابلیت سامانه</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''قابلیت سامانه: {{{نام قابلیت|{{PAGENAME}}}}}'''
+|-
+! کد قابلیت || {{{کد قابلیت|}}}
+! سامانه || [[{{{سامانه مرتبط|}}}]]
+! وضعیت || {{{وضعیت قابلیت|فعال}}}
+|-
+! شرح قابلیت || colspan="5" | {{{شرح قابلیت|}}}
+|-
+! فرآیندهای پشتیبانی‌شده || colspan="5" | {{{فرآیندهای پشتیبانی‌شده|}}}
+|}
+{{#set:کد قابلیت={{{کد قابلیت|}}}|نام قابلیت={{{نام قابلیت|{{PAGENAME}}}}}|سامانه مرتبط={{{سامانه مرتبط|}}}|وضعیت قابلیت={{{وضعیت قابلیت|فعال}}}|فرآیندهای پشتیبانی‌شده={{{فرآیندهای پشتیبانی‌شده|}}}|+sep=,}}
+[[رده:قابلیت‌های سامانه]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:قابلیت سامانه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+{{#forminput:form=قابلیت سامانه|button text=ایجاد/ویرایش قابلیت سامانه|autocomplete on category=قابلیت‌های سامانه|placeholder=نام قابلیت را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=قابلیت:&lt;قابلیت سامانه[نام قابلیت]&gt;}}}
+{{{for template|قابلیت سامانه}}}
+{| class="formtable"
+! کد قابلیت: || {{{field|کد قابلیت|mandatory|size=28|placeholder=HAFA-EDU-CAP-001}}}
+|-
+! نام قابلیت: || {{{field|نام قابلیت|mandatory|size=70}}}
+|-
+! سامانه مرتبط: || {{{field|سامانه مرتبط|input type=combobox|values from category=سامانه‌ها|mandatory}}}
+|-
+! وضعیت قابلیت: || {{{field|وضعیت قابلیت|input type=dropdown|values=فعال,ناقص,در حال توسعه,غیرفعال|default=فعال}}}
+|-
+! شرح قابلیت: || {{{field|شرح قابلیت|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! فرآیندهای پشتیبانی‌شده: || {{{field|فرآیندهای پشتیبانی‌شده|input type=combobox|values from category=فرآیندها|list|delimiter=,|size=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره قابلیت}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:شکاف فرآیند سامانه</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''شکاف فرآیند–سامانه: {{{عنوان شکاف|{{PAGENAME}}}}}'''
+|-
+! کد شکاف || {{{کد شکاف|}}}
+! فرآیند || [[{{{فرآیند مرتبط|}}}]]
+! سامانه || [[{{{سامانه مرتبط با شکاف|}}}]]
+|-
+! وضعیت پوشش || {{{وضعیت پوشش|}}}
+! اولویت || {{{اولویت شکاف|}}}
+! وضعیت اقدام || {{{وضعیت اقدام|باز}}}
+|-
+! شرح شکاف || colspan="5" | {{{شرح شکاف|}}}
+|-
+! اقدام پیشنهادی || colspan="5" | {{{اقدام پیشنهادی|}}}
+|-
+! مسئول پیگیری || [[{{{مسئول پیگیری|}}}]]
+! موعد هدف || {{{موعد هدف|}}}
+|}
+{{#set:کد شکاف={{{کد شکاف|}}}|عنوان شکاف={{{عنوان شکاف|{{PAGENAME}}}}}|فرآیند مرتبط={{{فرآیند مرتبط|}}}|سامانه مرتبط با شکاف={{{سامانه مرتبط با شکاف|}}}|وضعیت پوشش={{{وضعیت پوشش|}}}|اولویت شکاف={{{اولویت شکاف|}}}|وضعیت اقدام={{{وضعیت اقدام|باز}}}|مسئول پیگیری={{{مسئول پیگیری|}}}|موعد هدف={{{موعد هدف|}}}}}
+[[رده:شکاف‌های فرآیند–سامانه]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:شکاف فرآیند سامانه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+{{#forminput:form=شکاف فرآیند سامانه|button text=ثبت/ویرایش شکاف|autocomplete on category=شکاف‌های فرآیند–سامانه|placeholder=عنوان شکاف را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=شکاف:&lt;شکاف فرآیند سامانه[عنوان شکاف]&gt;}}}
+{{{for template|شکاف فرآیند سامانه}}}
+{| class="formtable"
+! کد شکاف: || {{{field|کد شکاف|mandatory|size=28|placeholder=HAFA-EDU-GAP-001}}}
+|-
+! عنوان شکاف: || {{{field|عنوان شکاف|mandatory|size=70}}}
+|-
+! فرآیند مرتبط: || {{{field|فرآیند مرتبط|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! سامانه مرتبط: || {{{field|سامانه مرتبط با شکاف|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! وضعیت پوشش: || {{{field|وضعیت پوشش|input type=dropdown|mandatory|values=پوشش کامل,پوشش ناقص,نیازمند اصلاح,فاقد پوشش,خارج از سامانه}}}
+|-
+! شرح شکاف: || {{{field|شرح شکاف|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! اقدام پیشنهادی: || {{{field|اقدام پیشنهادی|input type=textarea|rows=3|cols=70}}}
+|-
+! اولویت شکاف: || {{{field|اولویت شکاف|input type=dropdown|values=بحرانی,بالا,متوسط,پایین|default=متوسط}}}
+|-
+! مسئول پیگیری: || {{{field|مسئول پیگیری|input type=combobox|values from category=افراد}}}
+|-
+! موعد هدف: || {{{field|موعد هدف|input type=datepicker}}}
+|-
+! وضعیت اقدام: || {{{field|وضعیت اقدام|input type=dropdown|values=باز,در حال بررسی,مصوب,در حال اجرا,بسته,رد شده|default=باز}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره شکاف}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد قابلیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد قابلیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام قابلیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام قابلیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سامانه مرتبط</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::سامانه مرتبط]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت قابلیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت قابلیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:شرح قابلیت</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::شرح قابلیت]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:فرآیندهای پشتیبانی‌شده</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::فرآیندهای پشتیبانی‌شده]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد شکاف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد شکاف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:عنوان شکاف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::عنوان شکاف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:فرآیند مرتبط</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::فرآیند مرتبط]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سامانه مرتبط با شکاف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::سامانه مرتبط با شکاف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت پوشش</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت پوشش]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:شرح شکاف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::شرح شکاف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:اقدام پیشنهادی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::اقدام پیشنهادی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:اولویت شکاف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::اولویت شکاف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:مسئول پیگیری</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::مسئول پیگیری]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:موعد هدف</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Date]]
+[[Display title::موعد هدف]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت اقدام</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت اقدام]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:قابلیت‌های سامانه</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به حافا: قابلیت‌های سامانه.</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>رده:شکاف‌های فرآیند–سامانه</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">رده مربوط به حافا: شکاف‌های فرآیند–سامانه.</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>حافا:دفتر ثبت کدها</title>
+    <ns>3092</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T02:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">__NOTOC__
+&lt;div style="direction:rtl; text-align:right;"&gt;
+= دفتر ثبت کدهای حافا =
+
+این صفحه توسط راهبر ویکی و کارشناس داده نگهداری می‌شود. پیش از ایجاد هر رکورد جدید، کد یکتا بررسی و شماره بعدی تخصیص می‌یابد. کد منسوخ یا حذف‌شده هرگز مجدداً استفاده نمی‌شود.
+
+{| class="wikitable"
+! حوزه !! نوع !! پیشوند !! آخرین شماره تخصیص‌یافته !! مسئول کنترل
+|-
+| EDU || واحد سازمانی || HAFA-EDU-ORG || 000 || راهبر ویکی
+|-
+| EDU || فرآیند || HAFA-EDU-PR || 000 || راهبر ویکی
+|-
+| EDU || فعالیت || HAFA-EDU-ACT || 000 || راهبر ویکی
+|-
+| EDU || سامانه || HAFA-EDU-SYS || 000 || راهبر ویکی
+|-
+| EDU || قابلیت سامانه || HAFA-EDU-CAP || 000 || راهبر ویکی
+|-
+| EDU || واژه || HAFA-EDU-TERM || 000 || کارشناس داده و واژگان
+|-
+| EDU || عنصر داده || HAFA-EDU-DATA || 000 || کارشناس داده و واژگان
+|-
+| EDU || شکاف فرآیند–سامانه || HAFA-EDU-GAP || 000 || مدیر پروژه
+|}
+
+== قواعد ==
+* الگو: &lt;code&gt;HAFA-[حوزه]-[نوع]-[شماره]&lt;/code&gt;
+* فقط حروف بزرگ لاتین، رقم و خط تیره استفاده می‌شود.
+* کد با تغییر نام، واحد، مالک، وضعیت یا نسخه تغییر نمی‌کند.
+* پیش از تخصیص، در جست‌وجوی ویکی و فهرست بالا کنترل یکتا بودن الزامی است.
+
+&lt;/div&gt;
+[[رده:حافا]]</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>

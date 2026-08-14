@@ -1,0 +1,31 @@
+<noinclude>
+{{#forminput:form=شکاف فرآیند سامانه|button text=ثبت/ویرایش شکاف|autocomplete on category=شکاف‌های فرآیند–سامانه|placeholder=عنوان شکاف را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=شکاف:<شکاف فرآیند سامانه[عنوان شکاف]>}}}
+{{{for template|شکاف فرآیند سامانه}}}
+{| class="formtable"
+! کد شکاف: || {{{field|کد شکاف|mandatory|size=28|placeholder=HAFA-EDU-GAP-001}}}
+|-
+! عنوان شکاف: || {{{field|عنوان شکاف|mandatory|size=70}}}
+|-
+! فرآیند مرتبط: || {{{field|فرآیند مرتبط|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! سامانه مرتبط: || {{{field|سامانه مرتبط با شکاف|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! وضعیت پوشش: || {{{field|وضعیت پوشش|input type=dropdown|mandatory|values=پوشش کامل,پوشش ناقص,نیازمند اصلاح,فاقد پوشش,خارج از سامانه}}}
+|-
+! شرح شکاف: || {{{field|شرح شکاف|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! اقدام پیشنهادی: || {{{field|اقدام پیشنهادی|input type=textarea|rows=3|cols=70}}}
+|-
+! اولویت شکاف: || {{{field|اولویت شکاف|input type=dropdown|values=بحرانی,بالا,متوسط,پایین|default=متوسط}}}
+|-
+! مسئول پیگیری: || {{{field|مسئول پیگیری|input type=combobox|values from category=افراد}}}
+|-
+! موعد هدف: || {{{field|موعد هدف|input type=datepicker}}}
+|-
+! وضعیت اقدام: || {{{field|وضعیت اقدام|input type=dropdown|values=باز,در حال بررسی,مصوب,در حال اجرا,بسته,رد شده|default=باز}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره شکاف}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

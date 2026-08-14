@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حافا</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>الگو:شخص</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی ثبت شخص در حافا. از ثبت شماره همراه، کد ملی، نشانی و اطلاعات حساس شخصی خودداری شود.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''{{{نام کامل|{{PAGENAME}}}}}'''
+|-
+! کد شخص || {{{کد شخص|}}}
+! سمت سازمانی || {{{سمت سازمانی|}}}
+! واحد سازمانی || [[{{{واحد سازمانی شخص|}}}]]
+|-
+! ایمیل سازمانی || {{{ایمیل سازمانی|}}}
+! وضعیت همکاری || {{{وضعیت همکاری|فعال}}}
+|}
+{{#set:کد شخص={{{کد شخص|}}}|نام کامل={{{نام کامل|{{PAGENAME}}}}}|سمت سازمانی={{{سمت سازمانی|}}}|واحد سازمانی شخص={{{واحد سازمانی شخص|}}}|ایمیل سازمانی={{{ایمیل سازمانی|}}}|وضعیت همکاری={{{وضعیت همکاری|فعال}}}}}
+[[رده:افراد]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:شخص</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+{{#forminput:form=شخص|button text=ایجاد/ویرایش شخص|autocomplete on category=افراد|placeholder=نام کامل را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=&lt;شخص[نام کامل]&gt;}}}
+{{{for template|شخص}}}
+{| class="formtable"
+! کد شخص: || {{{field|کد شخص|size=28|placeholder=HAFA-EDU-PER-001}}}
+|-
+! نام کامل: || {{{field|نام کامل|mandatory|size=70}}}
+|-
+! سمت سازمانی: || {{{field|سمت سازمانی|input type=text|size=70}}}
+|-
+! واحد سازمانی: || {{{field|واحد سازمانی شخص|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! ایمیل سازمانی: || {{{field|ایمیل سازمانی|input type=email|size=70}}}
+|-
+! وضعیت همکاری: || {{{field|وضعیت همکاری|input type=dropdown|values=فعال,غیرفعال,خارج از حوزه|default=فعال}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره شخص}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>الگو:نقش</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''نقش: {{{نام نقش|{{PAGENAME}}}}}'''
+|-
+! کد نقش || {{{کد نقش|}}}
+! نوع نقش || {{{نوع نقش|}}}
+|-
+! شرح مسئولیت || colspan="3" | {{{شرح مسئولیت نقش|}}}
+|}
+{{#set:کد نقش={{{کد نقش|}}}|نام نقش={{{نام نقش|{{PAGENAME}}}}}|نوع نقش={{{نوع نقش|}}}|شرح مسئولیت نقش={{{شرح مسئولیت نقش|}}}}}
+[[رده:نقش‌ها]]
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:نقش</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+{{#forminput:form=نقش|button text=ایجاد/ویرایش نقش|autocomplete on category=نقش‌ها|placeholder=نام نقش را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=&lt;نقش[نام نقش]&gt;}}}
+{{{for template|نقش}}}
+{| class="formtable"
+! کد نقش: || {{{field|کد نقش|mandatory|size=28|placeholder=HAFA-EDU-ROLE-001}}}
+|-
+! نام نقش: || {{{field|نام نقش|mandatory|size=70}}}
+|-
+! نوع نقش: || {{{field|نوع نقش|input type=dropdown|values=حاکمیتی,اجرایی,سامانه‌ای,ذی‌نفع,کنترلی|default=اجرایی}}}
+|-
+! شرح مسئولیت نقش: || {{{field|شرح مسئولیت نقش|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره نقش}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد شخص</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد شخص]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام کامل</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام کامل]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:سمت سازمانی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::سمت سازمانی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:واحد سازمانی شخص</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Page]]
+[[Display title::واحد سازمانی شخص]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:ایمیل سازمانی</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Email]]
+[[Display title::ایمیل سازمانی]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:وضعیت همکاری</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::وضعیت همکاری]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد نقش</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد نقش]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نام نقش</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نام نقش]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:نوع نقش</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::نوع نقش]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>Property:شرح مسئولیت نقش</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T03:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::شرح مسئولیت نقش]]
+</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>

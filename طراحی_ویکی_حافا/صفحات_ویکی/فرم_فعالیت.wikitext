@@ -1,0 +1,26 @@
+<noinclude>
+این فرم برای ایجاد یا ویرایش فعالیت‌های یک فرآیند استفاده می‌شود.
+{{#forminput:form=فعالیت|button text=ایجاد/ویرایش فعالیت|autocomplete on category=فعالیت‌ها|placeholder=نام فعالیت را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=فعالیت:<فعالیت[نام فعالیت]>}}}
+{{{for template|فعالیت}}}
+{| class="formtable"
+! نام فعالیت: || {{{field|نام فعالیت|mandatory|size=60}}}
+|-
+! مرتبط با فرآیند: || {{{field|مرتبط با فرآیند|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! ترتیب انجام: || {{{field|ترتیب انجام|input type=number|mandatory}}}
+|-
+! نقش انجام‌دهنده: || {{{field|نقش انجام‌دهنده|input type=combobox|values from category=نقش‌ها}}}
+|-
+! سامانه فعالیت: || {{{field|سامانه فعالیت|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! توضیحات فعالیت: || {{{field|توضیحات فعالیت|input type=textarea|rows=3|cols=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره فعالیت}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

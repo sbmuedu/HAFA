@@ -1,0 +1,66 @@
+<noinclude>
+فرم استاندارد ایجاد و ویرایش فرآیند حافا.
+{{#forminput:form=فرآیند|button text=ایجاد/ویرایش فرآیند}}
+</noinclude><includeonly>
+{{{info|page name=فرآیند:<فرآیند[نام فرآیند]>|create title=ایجاد فرآیند حافا|edit title=ویرایش فرآیند حافا}}}
+{{{for template|فرآیند}}}
+== شناسایی و حکمرانی ==
+{| class="formtable"
+! کد فرآیند: || {{{field|کد فرآیند|mandatory|size=25|placeholder=HAFA-EDU-PR-001}}}
+|-
+! نام فرآیند: || {{{field|نام فرآیند|mandatory|size=60}}}
+|-
+! سطح فرآیند: || {{{field|سطح فرآیند|input type=dropdown|mandatory|values=کلان,اصلی,زیرفرآیند}}}
+|-
+! واحد مسئول: || {{{field|واحد مسئول|input type=combobox|values from category=واحدهای سازمانی|mandatory}}}
+|-
+! مالک فرآیند: || {{{field|مالک فرآیند|input type=combobox|values from category=افراد}}}
+|-
+! واحدهای همکار: || {{{field|واحدهای همکار|input type=combobox|values from category=واحدهای سازمانی|list|delimiter=,|size=70}}}
+|-
+! وضعیت حاکمیتی: || {{{field|وضعیت حاکمیتی|input type=dropdown|mandatory|values=پیش‌نویس,در حال بازبینی,نیازمند اصلاح,تأیید مالک,مصوب,منسوخ|default=پیش‌نویس}}}
+|-
+! فرآیند بالادست: || {{{field|فرآیند بالادست|input type=combobox|values from category=فرآیندها}}}
+|-
+! نسخه: || {{{field|نسخه|size=10|default=۰.۱}}}
+|-
+! تاریخ تأیید: || {{{field|تاریخ تأیید|input type=datepicker}}}
+|-
+! تاریخ بازنگری بعدی: || {{{field|تاریخ بازنگری بعدی|input type=datepicker}}}
+|}
+
+== تعریف و مرز ==
+{| class="formtable"
+! هدف فرآیند: || {{{field|هدف فرآیند|input type=textarea|mandatory|rows=3|cols=70}}}
+|-
+! رویداد آغاز: || {{{field|رویداد آغاز|input type=text|size=70}}}
+|-
+! رویداد پایان: || {{{field|رویداد پایان|input type=text|size=70}}}
+|-
+! ذی‌نفعان: || {{{field|ذی‌نفعان|input type=textarea|rows=2|cols=70}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=70}}}
+|-
+! قوانین و مستندات: || {{{field|قوانین و مستندات|input type=textarea|rows=3|cols=70}}}
+|-
+! توضیحات/دامنه: || {{{field|توضیحات|input type=textarea|rows=3|cols=70}}}
+|}
+
+== ارتباط با داده و سامانه ==
+{| class="formtable"
+! سامانه‌های مرتبط: || {{{field|سامانه‌های مرتبط|input type=combobox|values from category=سامانه‌ها|list|delimiter=,|size=70}}}
+|-
+! داده‌های کلیدی: || {{{field|داده‌های کلیدی|input type=combobox|values from category=عناصر داده|list|delimiter=,|size=70}}}
+|}
+
+== مدل BPMN ==
+{| class="formtable"
+! فایل BPMN: || {{{field|فایل BPMN|input type=upload|uploadable|size=60}}}
+|-
+! تصویر BPMN: || {{{field|تصویر BPMN|input type=upload|uploadable|size=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

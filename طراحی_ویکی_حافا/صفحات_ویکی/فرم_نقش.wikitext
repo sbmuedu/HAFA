@@ -1,0 +1,17 @@
+<noinclude>
+{{#forminput:form=نقش|button text=ایجاد/ویرایش نقش|autocomplete on category=نقش‌ها|placeholder=نام نقش را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=<نقش[نام نقش]>}}}
+{{{for template|نقش}}}
+{| class="formtable"
+! کد نقش: || {{{field|کد نقش|mandatory|size=28|placeholder=HAFA-EDU-ROLE-001}}}
+|-
+! نام نقش: || {{{field|نام نقش|mandatory|size=70}}}
+|-
+! نوع نقش: || {{{field|نوع نقش|input type=dropdown|values=حاکمیتی,اجرایی,سامانه‌ای,ذی‌نفع,کنترلی|default=اجرایی}}}
+|-
+! شرح مسئولیت نقش: || {{{field|شرح مسئولیت نقش|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره نقش}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حاکمیت اطلاعات و فرآیندهای آموزشی (حافا)</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>فرم:فعالیت</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش فعالیت‌های یک فرآیند استفاده می‌شود.
+{{#forminput:form=فعالیت|button text=ایجاد/ویرایش فعالیت|autocomplete on category=فعالیت‌ها|placeholder=نام فعالیت را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=فعالیت:&lt;فعالیت[نام فعالیت]&gt;}}}
+{{{for template|فعالیت}}}
+{| class="formtable"
+! نام فعالیت: || {{{field|نام فعالیت|mandatory|size=60}}}
+|-
+! مرتبط با فرآیند: || {{{field|مرتبط با فرآیند|input type=combobox|values from category=فرآیندها|mandatory}}}
+|-
+! ترتیب انجام: || {{{field|ترتیب انجام|input type=number|mandatory}}}
+|-
+! نقش انجام‌دهنده: || {{{field|نقش انجام‌دهنده|input type=combobox|values from category=نقش‌ها}}}
+|-
+! سامانه فعالیت: || {{{field|سامانه فعالیت|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! ورودی‌ها: || {{{field|ورودی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! خروجی‌ها: || {{{field|خروجی‌ها|input type=textarea|rows=2|cols=60}}}
+|-
+! توضیحات فعالیت: || {{{field|توضیحات فعالیت|input type=textarea|rows=3|cols=60}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره فعالیت}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:سامانه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش سامانه‌ها استفاده می‌شود.
+{{#forminput:form=سامانه|button text=ایجاد/ویرایش سامانه|autocomplete on category=سامانه‌ها|placeholder=نام سامانه را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=سامانه:&lt;سامانه[نام سامانه]&gt;}}}
+{{{for template|سامانه}}}
+{| class="formtable"
+! کد سامانه: || {{{field|کد سامانه|mandatory|size=25|placeholder=HAFA-EDU-SYS-001}}}
+|-
+! نام سامانه: || {{{field|نام سامانه|mandatory|size=60}}}
+|-
+! مالک سامانه: || {{{field|مالک سامانه|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت سامانه: || {{{field|وضعیت سامانه|input type=dropdown|values=فعال,در حال توسعه,در حال جایگزینی,غیرفعال|default=فعال}}}
+|-
+! آدرس وب: || {{{field|آدرس وب|input type=url|size=70}}}
+|-
+! توضیحات: || {{{field|توضیحات|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره سامانه}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:واژه</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش واژه‌های حافا استفاده می‌شود.
+{{#forminput:form=واژه|button text=ایجاد/ویرایش واژه|autocomplete on category=واژگان|placeholder=نام واژه را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=واژه:&lt;واژه[نام واژه]&gt;}}}
+{{{for template|واژه}}}
+{| class="formtable"
+! کد واژه: || {{{field|کد واژه|mandatory|size=25|placeholder=HAFA-TERM-001}}}
+|-
+! نام واژه: || {{{field|نام واژه|mandatory|size=60}}}
+|-
+! تعریف: || {{{field|تعریف|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! واحد مرتبط: || {{{field|واحد مرتبط|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مترادف‌ها: || {{{field|مترادف‌ها|input type=text|size=70}}}
+|-
+! منبع تعریف: || {{{field|منبع تعریف|input type=text|size=70}}}
+|-
+! وضعیت واژه: || {{{field|وضعیت واژه|input type=dropdown|values=پیش‌نویس,در حال بازبینی,مصوب,منسوخ|default=پیش‌نویس}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واژه}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+  <page>
+    <title>فرم:عنصر داده</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-16T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش عناصر دیکشنری داده استفاده می‌شود.
+{{#forminput:form=عنصر داده|button text=ایجاد/ویرایش عنصر داده|autocomplete on category=عناصر داده|placeholder=نام عنصر داده را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=داده:&lt;عنصر داده[نام عنصر داده]&gt;}}}
+{{{for template|عنصر داده}}}
+{| class="formtable"
+! کد عنصر داده: || {{{field|کد عنصر داده|mandatory|size=25|placeholder=HAFA-DATA-001}}}
+|-
+! نام عنصر داده: || {{{field|نام عنصر داده|mandatory|size=60}}}
+|-
+! تعریف عنصر داده: || {{{field|تعریف عنصر داده|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! نوع داده: || {{{field|نوع داده|input type=dropdown|values=متن,عدد,تاریخ,زمان,بولی,فهرست انتخابی,شناسه,پرونده,پیوند}}}
+|-
+! قالب داده: || {{{field|قالب داده|input type=text|size=60|placeholder=مثال: YYYY-MM-DD یا عدد صحیح ۱۰ رقمی}}}
+|-
+! دامنه مقادیر: || {{{field|دامنه مقادیر|input type=textarea|rows=2|cols=70}}}
+|-
+! مالک داده: || {{{field|مالک داده|input type=combobox|values from category=افراد}}}
+|-
+! واحد مسئول داده: || {{{field|واحد مسئول داده|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! سامانه مرجع: || {{{field|سامانه مرجع|input type=combobox|values from category=سامانه‌ها}}}
+|-
+! سطح حساسیت: || {{{field|سطح حساسیت|input type=dropdown|values=عمومی,داخلی,محرمانه|default=داخلی}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره عنصر داده}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+      <sha1 />
+    </revision>
+  </page>
+</mediawiki>

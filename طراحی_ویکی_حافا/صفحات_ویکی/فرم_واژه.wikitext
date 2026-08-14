@@ -1,0 +1,24 @@
+<noinclude>
+این فرم برای ایجاد یا ویرایش واژه‌های حافا استفاده می‌شود.
+{{#forminput:form=واژه|button text=ایجاد/ویرایش واژه|autocomplete on category=واژگان|placeholder=نام واژه را وارد کنید}}
+</noinclude><includeonly>
+{{{info|page name=واژه:<واژه[نام واژه]>}}}
+{{{for template|واژه}}}
+{| class="formtable"
+! کد واژه: || {{{field|کد واژه|mandatory|size=25|placeholder=HAFA-TERM-001}}}
+|-
+! نام واژه: || {{{field|نام واژه|mandatory|size=60}}}
+|-
+! تعریف: || {{{field|تعریف|input type=textarea|mandatory|rows=4|cols=70}}}
+|-
+! واحد مرتبط: || {{{field|واحد مرتبط|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مترادف‌ها: || {{{field|مترادف‌ها|input type=text|size=70}}}
+|-
+! منبع تعریف: || {{{field|منبع تعریف|input type=text|size=70}}}
+|-
+! وضعیت واژه: || {{{field|وضعیت واژه|input type=dropdown|values=پیش‌نویس,در حال بازبینی,مصوب,منسوخ|default=پیش‌نویس}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واژه}}} {{{standard input|cancel|label=انصراف}}}
+</includeonly>
