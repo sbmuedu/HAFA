@@ -1,3 +1,7 @@
 # Python cache files
 __pycache__/
 *.py[cod]
+
+# Output produced by scripts/simple_web_scraper.py
+web_archive/
+archive_*/
