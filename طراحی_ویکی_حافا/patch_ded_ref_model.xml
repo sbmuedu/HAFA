@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" version="0.11" xml:lang="fa">
+  <siteinfo>
+    <sitename>حاکمیت اطلاعات و فرآیندهای آموزشی (حافا)</sitename>
+    <dbname>wiki_hafa</dbname>
+    <base>http://wiki/wiki/حافا:شروع</base>
+    <generator>MediaWiki 1.46.0</generator>
+    <case>first-letter</case>
+  </siteinfo>
+  <page>
+    <title>الگو:واحد سازمانی</title>
+    <ns>10</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+الگوی واحد سازمانی حافا؛ برای ثبت معاونت، مدیریت، مرکز، دفتر، اداره و نیز واحدهای مرجع بیرونی (دانشگاه‌ها، دانشکده‌ها، مراکز و مؤسساتِ فهرست‌های کدینگ استاندارد آموزش) استفاده می‌شود.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+&lt;div style="direction:rtl; text-align:right;"&gt;
+{| class="wikitable" style="width:100%;"
+|+ '''واحد سازمانی: {{{نام واحد|{{PAGENAME}}}}}'''
+|-
+! کد واحد || {{{کد واحد|}}}
+! نوع واحد || {{{نوع واحد|}}}
+! واحد بالادست || [[{{{واحد بالادست|}}}]]
+|-
+! کد استاندارد DED || {{{کد استاندارد DED|—}}}
+! حوزه واحد || {{{حوزه واحد|داخلی}}}
+! وضعیت || {{{وضعیت واحد|فعال}}}
+|-
+! مدیر واحد || [[{{{مدیر واحد|}}}]]
+! شرح مأموریت || colspan="5" | {{{شرح مأموریت|}}}
+|}
+
+== فرآیندهای تحت مسئولیت ==
+{{#ask:[[رده:فرآیندها]][[واحد مسئول::{{FULLPAGENAME}}]]
+|?کد فرآیند
+|?سطح فرآیند
+|?مالک فرآیند
+|?وضعیت حاکمیتی
+|format=table
+|mainlabel=فرآیند
+|sort=کد فرآیند
+|default=هنوز فرآیندی برای این واحد ثبت نشده است.
+}}
+
+== فرآیندهای همکار ==
+{{#ask:[[رده:فرآیندها]][[واحدهای همکار::{{FULLPAGENAME}}]]
+|?کد فرآیند
+|?واحد مسئول
+|?وضعیت حاکمیتی
+|format=table
+|mainlabel=فرآیند
+|sort=کد فرآیند
+|default=این واحد در فرآیند مشترکی ثبت نشده است.
+}}
+
+{{#set:کد واحد={{{کد واحد|}}}|نام واحد={{{نام واحد|{{PAGENAME}}}}}|نوع واحد={{{نوع واحد|}}}|واحد بالادست={{{واحد بالادست|}}}|مدیر واحد={{{مدیر واحد|}}}|وضعیت واحد={{{وضعیت واحد|فعال}}}|شرح مأموریت={{{شرح مأموریت|}}}|کد استاندارد DED={{{کد استاندارد DED|}}}|حوزه واحد={{{حوزه واحد|داخلی}}}}}
+&lt;/div&gt;
+[[رده:واحدهای سازمانی]]
+&lt;/includeonly&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>فرم:واحد سازمانی</title>
+    <ns>106</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">&lt;noinclude&gt;
+این فرم برای ایجاد یا ویرایش واحدهای سازمانی (داخلی و مرجع بیرونی) استفاده می‌شود.
+{{#forminput:form=واحد سازمانی|button text=ایجاد/ویرایش واحد سازمانی|autocomplete on category=واحدهای سازمانی|placeholder=نام واحد را وارد کنید}}
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{{info|page name=&lt;واحد سازمانی[نام واحد]&gt;|create title=ایجاد واحد سازمانی|edit title=ویرایش واحد سازمانی}}}
+{{{for template|واحد سازمانی}}}
+{| class="formtable"
+! کد واحد: || {{{field|کد واحد|size=25|placeholder=HAFA-EDU-ORG-001}}}
+|-
+! نام واحد: || {{{field|نام واحد|mandatory|size=60}}}
+|-
+! نوع واحد: || {{{field|نوع واحد|input type=dropdown|mandatory|values=دانشگاه,معاونت,مدیریت,مرکز,دفتر,اداره,گروه,کمیته,دانشکده,پردیس,مؤسسه آموزشی,مجتمع آموزش عالی,مؤسسه طرف تعهد,مرکز تحقیقاتی,مرکز رشد,پژوهشکده}}}
+|-
+! حوزه واحد: || {{{field|حوزه واحد|input type=dropdown|values=داخلی,مرجع بیرونی|default=داخلی}}}
+|-
+! کد استاندارد DED: || {{{field|کد استاندارد DED|size=25|placeholder=کد مرجع در کدینگ استاندارد آموزش}}}
+|-
+! واحد بالادست: || {{{field|واحد بالادست|input type=combobox|values from category=واحدهای سازمانی}}}
+|-
+! مدیر واحد: || {{{field|مدیر واحد|input type=combobox|values from category=افراد}}}
+|-
+! وضعیت واحد: || {{{field|وضعیت واحد|input type=dropdown|values=فعال,ادغام‌شده,منحل‌شده|default=فعال}}}
+|-
+! شرح مأموریت: || {{{field|شرح مأموریت|input type=textarea|rows=4|cols=70}}}
+|}
+{{{end template}}}
+{{{standard input|save|label=ذخیره واحد}}} {{{standard input|cancel|label=انصراف}}}
+&lt;/includeonly&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Property:کد استاندارد DED</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::کد استاندارد DED]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>Property:حوزه واحد</title>
+    <ns>102</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">[[Has type::Text]]
+[[Display title::حوزه واحد]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:دانشگاه‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">دانشگاه‌ها و مؤسسات دانشگاهی ثبت‌شده به‌عنوان واحد مرجع بیرونی از کدینگ استاندارد آموزش.
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:دانشکده‌ها و پردیس‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">دانشکده‌ها و پردیس‌های خودگردان ثبت‌شده از کدینگ استاندارد آموزش (جدول ۶).
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:مؤسسات آموزش عالی</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">مؤسسات آموزش عالی سلامت و مؤسسات مستقل ثبت‌شده از کدینگ استاندارد آموزش.
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:مجتمع‌های آموزش عالی</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">مجتمع‌های آموزش عالی علوم پزشکی ثبت‌شده از کدینگ استاندارد آموزش.
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:مؤسسات طرف تعهد</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">مؤسسات طرف تعهد ثبت‌شده از کدینگ استاندارد آموزش (جدول ۹).
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:مراکز تحقیقاتی</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">مراکز تحقیقاتی ثبت‌شده از کدینگ استاندارد آموزش (جدول ۳۴).
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:مراکز رشد</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">مراکز رشد ثبت‌شده از کدینگ استاندارد آموزش (جدول ۳۵).
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+  <page>
+    <title>رده:پژوهشکده‌ها</title>
+    <ns>14</ns>
+    <id>0</id>
+    <revision>
+      <id>0</id>
+      <timestamp>2026-08-21T00:00:00Z</timestamp>
+      <contributor>
+        <username>HafaImport</username>
+        <id>0</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">پژوهشکده‌های ثبت‌شده از کدینگ استاندارد آموزش (جدول ۳۶).
+
+[[رده:واحدهای سازمانی]]
+</text>
+    </revision>
+  </page>
+</mediawiki>

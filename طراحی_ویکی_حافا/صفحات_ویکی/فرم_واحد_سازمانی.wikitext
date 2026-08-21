@@ -1,15 +1,19 @@
 <noinclude>
-این فرم برای ایجاد یا ویرایش واحدهای سازمانی استفاده می‌شود.
+این فرم برای ایجاد یا ویرایش واحدهای سازمانی (داخلی و مرجع بیرونی) استفاده می‌شود.
 {{#forminput:form=واحد سازمانی|button text=ایجاد/ویرایش واحد سازمانی|autocomplete on category=واحدهای سازمانی|placeholder=نام واحد را وارد کنید}}
 </noinclude><includeonly>
 {{{info|page name=<واحد سازمانی[نام واحد]>|create title=ایجاد واحد سازمانی|edit title=ویرایش واحد سازمانی}}}
 {{{for template|واحد سازمانی}}}
 {| class="formtable"
-! کد واحد: || {{{field|کد واحد|mandatory|size=25|placeholder=HAFA-EDU-ORG-001}}}
+! کد واحد: || {{{field|کد واحد|size=25|placeholder=HAFA-EDU-ORG-001}}}
 |-
 ! نام واحد: || {{{field|نام واحد|mandatory|size=60}}}
 |-
-! نوع واحد: || {{{field|نوع واحد|input type=dropdown|mandatory|values=دانشگاه,معاونت,مدیریت,مرکز,دفتر,اداره,گروه,کمیته}}}
+! نوع واحد: || {{{field|نوع واحد|input type=dropdown|mandatory|values=دانشگاه,معاونت,مدیریت,مرکز,دفتر,اداره,گروه,کمیته,دانشکده,پردیس,مؤسسه آموزشی,مجتمع آموزش عالی,مؤسسه طرف تعهد,مرکز تحقیقاتی,مرکز رشد,پژوهشکده}}}
+|-
+! حوزه واحد: || {{{field|حوزه واحد|input type=dropdown|values=داخلی,مرجع بیرونی|default=داخلی}}}
+|-
+! کد استاندارد DED: || {{{field|کد استاندارد DED|size=25|placeholder=کد مرجع در کدینگ استاندارد آموزش}}}
 |-
 ! واحد بالادست: || {{{field|واحد بالادست|input type=combobox|values from category=واحدهای سازمانی}}}
 |-
